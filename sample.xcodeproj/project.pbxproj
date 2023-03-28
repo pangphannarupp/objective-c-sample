@@ -10,13 +10,17 @@
 		6CB7E31D29CADEC1009998B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB7E31C29CADEC1009998B1 /* AppDelegate.m */; };
 		6CB7E32029CADEC1009998B1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB7E31F29CADEC1009998B1 /* SceneDelegate.m */; };
 		6CB7E32329CADEC1009998B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB7E32229CADEC1009998B1 /* ViewController.m */; };
-		6CB7E32629CADEC1009998B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CB7E32429CADEC1009998B1 /* Main.storyboard */; };
 		6CB7E32829CADEC3009998B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CB7E32729CADEC3009998B1 /* Assets.xcassets */; };
 		6CB7E32B29CADEC3009998B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CB7E32929CADEC3009998B1 /* LaunchScreen.storyboard */; };
 		6CB7E32E29CADEC3009998B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB7E32D29CADEC3009998B1 /* main.m */; };
 		6CB7E33829CADEC3009998B1 /* sampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB7E33729CADEC3009998B1 /* sampleTests.m */; };
 		6CB7E34229CADEC3009998B1 /* sampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB7E34129CADEC3009998B1 /* sampleUITests.m */; };
 		6CB7E34429CADEC3009998B1 /* sampleUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB7E34329CADEC3009998B1 /* sampleUITestsLaunchTests.m */; };
+		6CB7E35729CAEE57009998B1 /* DialogPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB7E35629CAEE57009998B1 /* DialogPlugin.m */; };
+		6CB7E35929CAF360009998B1 /* Plugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB7E35829CAF360009998B1 /* Plugin.m */; };
+		6CB7E35D29CAF4FB009998B1 /* PluginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB7E35C29CAF4FA009998B1 /* PluginModel.m */; };
+		6CB7E36029CB0218009998B1 /* CameraPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB7E35F29CB0218009998B1 /* CameraPlugin.m */; };
+		6CB7E36229CB0663009998B1 /* BiometricPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB7E36129CB0663009998B1 /* BiometricPlugin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +48,6 @@
 		6CB7E31F29CADEC1009998B1 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		6CB7E32129CADEC1009998B1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6CB7E32229CADEC1009998B1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6CB7E32529CADEC1009998B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6CB7E32729CADEC3009998B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CB7E32A29CADEC3009998B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CB7E32C29CADEC3009998B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +57,16 @@
 		6CB7E33D29CADEC3009998B1 /* sampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CB7E34129CADEC3009998B1 /* sampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sampleUITests.m; sourceTree = "<group>"; };
 		6CB7E34329CADEC3009998B1 /* sampleUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sampleUITestsLaunchTests.m; sourceTree = "<group>"; };
+		6CB7E35229CAECA6009998B1 /* Plugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plugin.h; sourceTree = "<group>"; };
+		6CB7E35529CAEE1D009998B1 /* DialogPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DialogPlugin.h; sourceTree = "<group>"; };
+		6CB7E35629CAEE57009998B1 /* DialogPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DialogPlugin.m; sourceTree = "<group>"; };
+		6CB7E35829CAF360009998B1 /* Plugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Plugin.m; sourceTree = "<group>"; };
+		6CB7E35B29CAF4EB009998B1 /* PluginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PluginModel.h; sourceTree = "<group>"; };
+		6CB7E35C29CAF4FA009998B1 /* PluginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PluginModel.m; sourceTree = "<group>"; };
+		6CB7E35E29CB020A009998B1 /* CameraPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraPlugin.h; sourceTree = "<group>"; };
+		6CB7E35F29CB0218009998B1 /* CameraPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraPlugin.m; sourceTree = "<group>"; };
+		6CB7E36129CB0663009998B1 /* BiometricPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BiometricPlugin.m; sourceTree = "<group>"; };
+		6CB7E36329CB0671009998B1 /* BiometricPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BiometricPlugin.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,13 +117,14 @@
 		6CB7E31A29CADEC1009998B1 /* sample */ = {
 			isa = PBXGroup;
 			children = (
+				6CB7E35129CAEC85009998B1 /* configs */,
+				6CB7E35029CAEC7A009998B1 /* plugins */,
 				6CB7E31B29CADEC1009998B1 /* AppDelegate.h */,
 				6CB7E31C29CADEC1009998B1 /* AppDelegate.m */,
 				6CB7E31E29CADEC1009998B1 /* SceneDelegate.h */,
 				6CB7E31F29CADEC1009998B1 /* SceneDelegate.m */,
 				6CB7E32129CADEC1009998B1 /* ViewController.h */,
 				6CB7E32229CADEC1009998B1 /* ViewController.m */,
-				6CB7E32429CADEC1009998B1 /* Main.storyboard */,
 				6CB7E32729CADEC3009998B1 /* Assets.xcassets */,
 				6CB7E32929CADEC3009998B1 /* LaunchScreen.storyboard */,
 				6CB7E32C29CADEC3009998B1 /* Info.plist */,
@@ -134,6 +148,30 @@
 				6CB7E34329CADEC3009998B1 /* sampleUITestsLaunchTests.m */,
 			);
 			path = sampleUITests;
+			sourceTree = "<group>";
+		};
+		6CB7E35029CAEC7A009998B1 /* plugins */ = {
+			isa = PBXGroup;
+			children = (
+				6CB7E35529CAEE1D009998B1 /* DialogPlugin.h */,
+				6CB7E35629CAEE57009998B1 /* DialogPlugin.m */,
+				6CB7E35E29CB020A009998B1 /* CameraPlugin.h */,
+				6CB7E35F29CB0218009998B1 /* CameraPlugin.m */,
+				6CB7E36129CB0663009998B1 /* BiometricPlugin.m */,
+				6CB7E36329CB0671009998B1 /* BiometricPlugin.h */,
+			);
+			path = plugins;
+			sourceTree = "<group>";
+		};
+		6CB7E35129CAEC85009998B1 /* configs */ = {
+			isa = PBXGroup;
+			children = (
+				6CB7E35229CAECA6009998B1 /* Plugin.h */,
+				6CB7E35829CAF360009998B1 /* Plugin.m */,
+				6CB7E35B29CAF4EB009998B1 /* PluginModel.h */,
+				6CB7E35C29CAF4FA009998B1 /* PluginModel.m */,
+			);
+			path = configs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,7 +279,6 @@
 			files = (
 				6CB7E32B29CADEC3009998B1 /* LaunchScreen.storyboard in Resources */,
 				6CB7E32829CADEC3009998B1 /* Assets.xcassets in Resources */,
-				6CB7E32629CADEC1009998B1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,9 +303,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CB7E36229CB0663009998B1 /* BiometricPlugin.m in Sources */,
+				6CB7E35929CAF360009998B1 /* Plugin.m in Sources */,
+				6CB7E36029CB0218009998B1 /* CameraPlugin.m in Sources */,
 				6CB7E32329CADEC1009998B1 /* ViewController.m in Sources */,
+				6CB7E35729CAEE57009998B1 /* DialogPlugin.m in Sources */,
 				6CB7E31D29CADEC1009998B1 /* AppDelegate.m in Sources */,
 				6CB7E32E29CADEC3009998B1 /* main.m in Sources */,
+				6CB7E35D29CAF4FB009998B1 /* PluginModel.m in Sources */,
 				6CB7E32029CADEC1009998B1 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,14 +348,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6CB7E32429CADEC1009998B1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6CB7E32529CADEC1009998B1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6CB7E32929CADEC3009998B1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -445,20 +479,23 @@
 				DEVELOPMENT_TEAM = 4K446R55W6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = sample/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Objective-C";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need camera access to take pictures";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Need Authentication with TouchId or FaceID";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Need library access to upload images";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = phanna.app.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -472,20 +509,23 @@
 				DEVELOPMENT_TEAM = 4K446R55W6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = sample/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Objective-C";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need camera access to take pictures";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Need Authentication with TouchId or FaceID";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Need library access to upload images";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = phanna.app.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
