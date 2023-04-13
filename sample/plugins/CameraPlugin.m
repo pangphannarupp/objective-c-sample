@@ -2,16 +2,20 @@
 //  CameraPlugin.m
 //  sample
 //
-//  Created by 임재욱 on 22/3/23.
+//  Created by Pang Phanna on 22/3/23.
 //
 
 #import <Foundation/Foundation.h>
 #import "CameraPlugin.h"
+#import "Util.h"
 
 @implementation CameraPlugin
 
-- (void) execute {
-    NSLog(@"execute CameraPlugin");
+//Util *util;
+
+- (void)execute:(NSDictionary *)param {
+    NSLog(@"CameraPlugin => param => %@", param);
+//    util = [[Util alloc] init];
     
     UIImagePickerController *imagePickerVC = [UIImagePickerController new];
     imagePickerVC.delegate = self;
@@ -31,14 +35,36 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
     
-    // Get the image captured by the UIImagePickerController
-    UIImage *originalImage = info[UIImagePickerControllerOriginalImage];
-    UIImage *editedImage = info[UIImagePickerControllerEditedImage];
-
-    // Do something with the images (based on your use case)
+    // Get the image
+    UIImage *image = [info objectForKey:UIImagePickerControllerEditedImage];
+    if (!image) {
+        image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    }
+    
+    // Get the path of the image
+    NSString *path = [NSTemporaryDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.png", [[NSUUID UUID] UUIDString]]];
+    NSData *imageData = UIImagePNGRepresentation(image);
+    [imageData writeToFile:path atomically:YES];
     
     // Dismiss UIImagePickerController to go back to your original view controller
     [self.viewController dismissViewControllerAnimated:YES completion:nil];
+    
+    Util *util = [[Util alloc] init];
+    [util showDialog: self.viewController message:@{
+        @"result": @YES,
+        @"path": path,
+    }];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    [self.viewController dismissViewControllerAnimated:YES completion:nil];
+    
+    Util *util = [[Util alloc] init];
+    [util showDialog: self.viewController message:@{
+        @"result": @NO,
+        @"errorCode": @"-1",
+        @"errorMessage": @"User cancel.",
+    }];
 }
 
 @end

@@ -5,12 +5,15 @@
 //  Created by Pang Phanna on 12/4/23.
 //
 
+#import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import "DialogPlugin.h"
 
-NS_ASSUME_NONNULL_BEGIN
+@interface DialogScreen : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
-@interface DialogScreen : NSObject
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSArray *itemList;
+@property (nonatomic, strong) DialogPlugin *plugin;
 
 @end
 
-NS_ASSUME_NONNULL_END

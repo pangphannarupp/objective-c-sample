@@ -2,7 +2,7 @@
 //  ApplicationScreen.m
 //  sample
 //
-//  Created by 임재욱 on 28/3/23.
+//  Created by Pang Phanna on 28/3/23.
 //
 
 #import <Foundation/Foundation.h>
@@ -12,6 +12,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.plugin = [[ApplicationPlugin alloc] init];
+    
     self.title = @"Application";
     
     self.view.backgroundColor = [UIColor whiteColor];
@@ -51,18 +53,22 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    NSMutableDictionary *param = [NSMutableDictionary dictionary];
     switch(indexPath.row) {
+        case 0:
+            [param setValue: @"app_info" forKey: @"type"];
+        break;
         case 1:
+            [param setValue: @"exit" forKey: @"type"];
         break;
         case 2:
-        break;
-        case 3:
-        break;
-        case 4:
+            [param setValue: @"open_app_setting" forKey: @"type"];
         break;
         default:
         break;
     }
+    self.plugin.viewController = self;
+    [self.plugin execute: param];
 }
 
 @end

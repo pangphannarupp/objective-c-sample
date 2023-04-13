@@ -6,11 +6,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SharePlugin.h"
 
-NS_ASSUME_NONNULL_BEGIN
+@interface ShareScreen : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
-@interface ShareScreen : NSObject
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSArray *itemList;
+@property (nonatomic, strong) SharePlugin *plugin;
 
 @end
-
-NS_ASSUME_NONNULL_END

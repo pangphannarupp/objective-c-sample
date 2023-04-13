@@ -2,7 +2,7 @@
 //  SceneDelegate.m
 //  sample
 //
-//  Created by 임재욱 on 22/3/23.
+//  Created by Pang Phanna on 22/3/23.
 //
 
 #import "SceneDelegate.h"
@@ -21,10 +21,41 @@
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.windowScene = (UIWindowScene *)scene;
-//    self.window.rootViewController = [[UINavigationController alloc]
-//                         initWithRootViewController:ViewController.new];
-    self.window.rootViewController = [[ViewController alloc]init];
-//    self.window.backgroundColor = [UIColor whiteColor];
+//    self.window.rootViewController = [[ViewController alloc]init];
+//    [self.window makeKeyAndVisible];
+    
+    // Create the root view controller
+    UIViewController *rootViewController = [[ViewController alloc] init];
+    // Create the navigation controller and set its root view controller
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
+    
+    // Customize the appearance of the navigation bar
+    NSDictionary *titleAttributes = @{ NSForegroundColorAttributeName: [UIColor blackColor],
+                                        NSFontAttributeName: [UIFont systemFontOfSize:18.0] };
+    navigationController.navigationBar.titleTextAttributes = titleAttributes;
+//    navigationController.navigationBar.barTintColor = [UIColor blueColor];
+//    navigationController.navigationBar.backgroundColor = [UIColor blueColor];
+    
+    
+
+    //set status bar
+//    let statusHeight = UIApplication.shared.statusBarFrame.size.height
+//    statusBarView = UIView()
+//    statusBarView?.backgroundColor = UIColor.init(hexString: navigationBarColor!)
+//    self.navigationController?.view.addSubview(statusBarView!)
+//    statusBarView?.translatesAutoresizingMaskIntoConstraints = false
+//    NSLayoutConstraint.activate ([
+//        statusBarView!.leadingAnchor.constraint(equalTo: navigationController!.view.leadingAnchor),
+//        statusBarView!.topAnchor.constraint(equalTo: navigationController!.view.topAnchor),
+//        statusBarView!.widthAnchor.constraint(equalTo: navigationController!.view.widthAnchor),
+//        statusBarView!.heightAnchor.constraint(equalToConstant: statusHeight)
+//    ])
+    
+//    UIImage *backButtonImage = [UIImage imageNamed:@"back-button"];
+//    navigationController.navigationBar.backIndicatorImage = backButtonImage;
+//    navigationController.navigationBar.backIndicatorTransitionMaskImage = backButtonImage;
+    // Set the navigation controller as the app's root view controller
+    self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
 }
 

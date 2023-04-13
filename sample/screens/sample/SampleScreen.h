@@ -5,12 +5,14 @@
 //  Created by Pang Phanna on 12/4/23.
 //
 
+#import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import "SamplePlugin.h"
 
-NS_ASSUME_NONNULL_BEGIN
+@interface SampleScreen : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
-@interface SampleScreen : NSObject
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSArray *itemList;
+@property (nonatomic, strong) SamplePlugin *plugin;
 
 @end
-
-NS_ASSUME_NONNULL_END

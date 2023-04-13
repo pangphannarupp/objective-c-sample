@@ -6,11 +6,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Plugin.h"
+#import <CoreLocation/CoreLocation.h>
 
-NS_ASSUME_NONNULL_BEGIN
+@interface GPSPlugin : Plugin <CLLocationManagerDelegate>
 
-@interface GPSPlugin : NSObject
+@property (strong, nonatomic) CLLocationManager *locationManager;
 
 @end
-
-NS_ASSUME_NONNULL_END

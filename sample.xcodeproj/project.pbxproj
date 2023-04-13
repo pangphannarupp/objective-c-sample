@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C168EB529E78DF1007ACB89 /* ExternalBrowserPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C168EB429E78DF1007ACB89 /* ExternalBrowserPlugin.m */; };
+		6C168EB829E793DD007ACB89 /* GPSPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C168EB729E793DD007ACB89 /* GPSPlugin.m */; };
+		6C168EBB29E797E3007ACB89 /* FileBrowserPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C168EBA29E797E3007ACB89 /* FileBrowserPlugin.m */; };
+		6C168EBE29E79B79007ACB89 /* ImageBrowserPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C168EBD29E79B79007ACB89 /* ImageBrowserPlugin.m */; };
+		6C168EC329E7A882007ACB89 /* PhoneScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C168EC229E7A882007ACB89 /* PhoneScreen.m */; };
+		6C168EC629E7A89D007ACB89 /* PhonePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C168EC529E7A89D007ACB89 /* PhonePlugin.m */; };
+		6C168ECA29E7AEF8007ACB89 /* ContactScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C168EC929E7AEF8007ACB89 /* ContactScreen.m */; };
+		6C168ECE29E7BC4F007ACB89 /* QRScannerScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C168ECD29E7BC4F007ACB89 /* QRScannerScreen.m */; };
+		6C215C3B29D29E8300FBEB35 /* ApplicationScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C215C3A29D29E8300FBEB35 /* ApplicationScreen.m */; };
+		6C215C3E29D2CDA000FBEB35 /* ApplicationPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C215C3D29D2CDA000FBEB35 /* ApplicationPlugin.m */; };
+		6C379C9C29E6420A00956445 /* PluginDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C379C9B29E6420A00956445 /* PluginDelegate.m */; };
+		6C379CA029E6447100956445 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C379C9F29E6447100956445 /* Util.m */; };
+		6C379CA429E65D7D00956445 /* DialogScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C379CA329E65D7D00956445 /* DialogScreen.m */; };
+		6C379CA829E669F200956445 /* SampleScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C379CA729E669F200956445 /* SampleScreen.m */; };
+		6C379CAB29E66A6700956445 /* SamplePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C379CAA29E66A6700956445 /* SamplePlugin.m */; };
+		6C379CAE29E66BF800956445 /* ToastPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C379CAD29E66BF800956445 /* ToastPlugin.m */; };
+		6C379CB129E66D0300956445 /* SharePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C379CB029E66D0300956445 /* SharePlugin.m */; };
+		6C379CB529E66D7700956445 /* ShareScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C379CB429E66D7700956445 /* ShareScreen.m */; };
+		6C379CB829E685AB00956445 /* DownloadPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C379CB729E685AB00956445 /* DownloadPlugin.m */; };
+		6C379CBB29E6AF6C00956445 /* ContactPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C379CBA29E6AF6C00956445 /* ContactPlugin.m */; };
 		6CB7E31D29CADEC1009998B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB7E31C29CADEC1009998B1 /* AppDelegate.m */; };
 		6CB7E32029CADEC1009998B1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB7E31F29CADEC1009998B1 /* SceneDelegate.m */; };
 		6CB7E32329CADEC1009998B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB7E32229CADEC1009998B1 /* ViewController.m */; };
@@ -41,6 +61,46 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6C168EB329E78DF1007ACB89 /* ExternalBrowserPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExternalBrowserPlugin.h; sourceTree = "<group>"; };
+		6C168EB429E78DF1007ACB89 /* ExternalBrowserPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExternalBrowserPlugin.m; sourceTree = "<group>"; };
+		6C168EB629E793DC007ACB89 /* GPSPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPSPlugin.h; sourceTree = "<group>"; };
+		6C168EB729E793DD007ACB89 /* GPSPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPSPlugin.m; sourceTree = "<group>"; };
+		6C168EB929E797E3007ACB89 /* FileBrowserPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileBrowserPlugin.h; sourceTree = "<group>"; };
+		6C168EBA29E797E3007ACB89 /* FileBrowserPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileBrowserPlugin.m; sourceTree = "<group>"; };
+		6C168EBC29E79B79007ACB89 /* ImageBrowserPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageBrowserPlugin.h; sourceTree = "<group>"; };
+		6C168EBD29E79B79007ACB89 /* ImageBrowserPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageBrowserPlugin.m; sourceTree = "<group>"; };
+		6C168EC129E7A882007ACB89 /* PhoneScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhoneScreen.h; sourceTree = "<group>"; };
+		6C168EC229E7A882007ACB89 /* PhoneScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhoneScreen.m; sourceTree = "<group>"; };
+		6C168EC429E7A89D007ACB89 /* PhonePlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhonePlugin.h; sourceTree = "<group>"; };
+		6C168EC529E7A89D007ACB89 /* PhonePlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhonePlugin.m; sourceTree = "<group>"; };
+		6C168EC829E7AEF8007ACB89 /* ContactScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactScreen.h; sourceTree = "<group>"; };
+		6C168EC929E7AEF8007ACB89 /* ContactScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactScreen.m; sourceTree = "<group>"; };
+		6C168ECC29E7BC4F007ACB89 /* QRScannerScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRScannerScreen.h; sourceTree = "<group>"; };
+		6C168ECD29E7BC4F007ACB89 /* QRScannerScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRScannerScreen.m; sourceTree = "<group>"; };
+		6C215C3929D29E0B00FBEB35 /* ApplicationScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplicationScreen.h; sourceTree = "<group>"; };
+		6C215C3A29D29E8300FBEB35 /* ApplicationScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplicationScreen.m; sourceTree = "<group>"; };
+		6C215C3C29D2CD4500FBEB35 /* ApplicationPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplicationPlugin.h; sourceTree = "<group>"; };
+		6C215C3D29D2CDA000FBEB35 /* ApplicationPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplicationPlugin.m; sourceTree = "<group>"; };
+		6C379C9A29E6420A00956445 /* PluginDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PluginDelegate.h; sourceTree = "<group>"; };
+		6C379C9B29E6420A00956445 /* PluginDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PluginDelegate.m; sourceTree = "<group>"; };
+		6C379C9E29E6447100956445 /* Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		6C379C9F29E6447100956445 /* Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		6C379CA229E65D7D00956445 /* DialogScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DialogScreen.h; sourceTree = "<group>"; };
+		6C379CA329E65D7D00956445 /* DialogScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DialogScreen.m; sourceTree = "<group>"; };
+		6C379CA629E669F200956445 /* SampleScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleScreen.h; sourceTree = "<group>"; };
+		6C379CA729E669F200956445 /* SampleScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleScreen.m; sourceTree = "<group>"; };
+		6C379CA929E66A6700956445 /* SamplePlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SamplePlugin.h; sourceTree = "<group>"; };
+		6C379CAA29E66A6700956445 /* SamplePlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SamplePlugin.m; sourceTree = "<group>"; };
+		6C379CAC29E66BF800956445 /* ToastPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToastPlugin.h; sourceTree = "<group>"; };
+		6C379CAD29E66BF800956445 /* ToastPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToastPlugin.m; sourceTree = "<group>"; };
+		6C379CAF29E66D0300956445 /* SharePlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharePlugin.h; sourceTree = "<group>"; };
+		6C379CB029E66D0300956445 /* SharePlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SharePlugin.m; sourceTree = "<group>"; };
+		6C379CB329E66D7700956445 /* ShareScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareScreen.h; sourceTree = "<group>"; };
+		6C379CB429E66D7700956445 /* ShareScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareScreen.m; sourceTree = "<group>"; };
+		6C379CB629E685AB00956445 /* DownloadPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadPlugin.h; sourceTree = "<group>"; };
+		6C379CB729E685AB00956445 /* DownloadPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadPlugin.m; sourceTree = "<group>"; };
+		6C379CB929E6AF6C00956445 /* ContactPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactPlugin.h; sourceTree = "<group>"; };
+		6C379CBA29E6AF6C00956445 /* ContactPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactPlugin.m; sourceTree = "<group>"; };
 		6CB7E31829CADEC1009998B1 /* sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CB7E31B29CADEC1009998B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6CB7E31C29CADEC1009998B1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -94,6 +154,100 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C168EBF29E7A488007ACB89 /* image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		6C168EC029E7A86A007ACB89 /* phone */ = {
+			isa = PBXGroup;
+			children = (
+				6C168EC129E7A882007ACB89 /* PhoneScreen.h */,
+				6C168EC229E7A882007ACB89 /* PhoneScreen.m */,
+			);
+			path = phone;
+			sourceTree = "<group>";
+		};
+		6C168EC729E7AEE4007ACB89 /* contact */ = {
+			isa = PBXGroup;
+			children = (
+				6C168EC829E7AEF8007ACB89 /* ContactScreen.h */,
+				6C168EC929E7AEF8007ACB89 /* ContactScreen.m */,
+			);
+			path = contact;
+			sourceTree = "<group>";
+		};
+		6C168ECB29E7BC2B007ACB89 /* qrscanner */ = {
+			isa = PBXGroup;
+			children = (
+				6C168ECC29E7BC4F007ACB89 /* QRScannerScreen.h */,
+				6C168ECD29E7BC4F007ACB89 /* QRScannerScreen.m */,
+			);
+			path = qrscanner;
+			sourceTree = "<group>";
+		};
+		6C215C3829D29DD400FBEB35 /* application */ = {
+			isa = PBXGroup;
+			children = (
+				6C215C3929D29E0B00FBEB35 /* ApplicationScreen.h */,
+				6C215C3A29D29E8300FBEB35 /* ApplicationScreen.m */,
+			);
+			path = application;
+			sourceTree = "<group>";
+		};
+		6C215C3F29D2CE6B00FBEB35 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				6C168ECB29E7BC2B007ACB89 /* qrscanner */,
+				6C168EC729E7AEE4007ACB89 /* contact */,
+				6C168EC029E7A86A007ACB89 /* phone */,
+				6C168EBF29E7A488007ACB89 /* image */,
+				6C379CB229E66D6100956445 /* share */,
+				6C379CA529E669D600956445 /* sample */,
+				6C379CA129E65D6300956445 /* dialog */,
+				6C215C3829D29DD400FBEB35 /* application */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		6C379C9D29E6445F00956445 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				6C379C9E29E6447100956445 /* Util.h */,
+				6C379C9F29E6447100956445 /* Util.m */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		6C379CA129E65D6300956445 /* dialog */ = {
+			isa = PBXGroup;
+			children = (
+				6C379CA229E65D7D00956445 /* DialogScreen.h */,
+				6C379CA329E65D7D00956445 /* DialogScreen.m */,
+			);
+			path = dialog;
+			sourceTree = "<group>";
+		};
+		6C379CA529E669D600956445 /* sample */ = {
+			isa = PBXGroup;
+			children = (
+				6C379CA629E669F200956445 /* SampleScreen.h */,
+				6C379CA729E669F200956445 /* SampleScreen.m */,
+			);
+			path = sample;
+			sourceTree = "<group>";
+		};
+		6C379CB229E66D6100956445 /* share */ = {
+			isa = PBXGroup;
+			children = (
+				6C379CB329E66D7700956445 /* ShareScreen.h */,
+				6C379CB429E66D7700956445 /* ShareScreen.m */,
+			);
+			path = share;
+			sourceTree = "<group>";
+		};
 		6CB7E30F29CADEC1009998B1 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +271,8 @@
 		6CB7E31A29CADEC1009998B1 /* sample */ = {
 			isa = PBXGroup;
 			children = (
+				6C379C9D29E6445F00956445 /* utils */,
+				6C215C3F29D2CE6B00FBEB35 /* screens */,
 				6CB7E35129CAEC85009998B1 /* configs */,
 				6CB7E35029CAEC7A009998B1 /* plugins */,
 				6CB7E31B29CADEC1009998B1 /* AppDelegate.h */,
@@ -153,12 +309,34 @@
 		6CB7E35029CAEC7A009998B1 /* plugins */ = {
 			isa = PBXGroup;
 			children = (
-				6CB7E35529CAEE1D009998B1 /* DialogPlugin.h */,
-				6CB7E35629CAEE57009998B1 /* DialogPlugin.m */,
+				6C215C3C29D2CD4500FBEB35 /* ApplicationPlugin.h */,
+				6C215C3D29D2CDA000FBEB35 /* ApplicationPlugin.m */,
+				6CB7E36329CB0671009998B1 /* BiometricPlugin.h */,
+				6CB7E36129CB0663009998B1 /* BiometricPlugin.m */,
 				6CB7E35E29CB020A009998B1 /* CameraPlugin.h */,
 				6CB7E35F29CB0218009998B1 /* CameraPlugin.m */,
-				6CB7E36129CB0663009998B1 /* BiometricPlugin.m */,
-				6CB7E36329CB0671009998B1 /* BiometricPlugin.h */,
+				6CB7E35529CAEE1D009998B1 /* DialogPlugin.h */,
+				6CB7E35629CAEE57009998B1 /* DialogPlugin.m */,
+				6C379CA929E66A6700956445 /* SamplePlugin.h */,
+				6C379CAA29E66A6700956445 /* SamplePlugin.m */,
+				6C379CAC29E66BF800956445 /* ToastPlugin.h */,
+				6C379CAD29E66BF800956445 /* ToastPlugin.m */,
+				6C379CAF29E66D0300956445 /* SharePlugin.h */,
+				6C379CB029E66D0300956445 /* SharePlugin.m */,
+				6C379CB629E685AB00956445 /* DownloadPlugin.h */,
+				6C379CB729E685AB00956445 /* DownloadPlugin.m */,
+				6C379CB929E6AF6C00956445 /* ContactPlugin.h */,
+				6C379CBA29E6AF6C00956445 /* ContactPlugin.m */,
+				6C168EB329E78DF1007ACB89 /* ExternalBrowserPlugin.h */,
+				6C168EB429E78DF1007ACB89 /* ExternalBrowserPlugin.m */,
+				6C168EB629E793DC007ACB89 /* GPSPlugin.h */,
+				6C168EB729E793DD007ACB89 /* GPSPlugin.m */,
+				6C168EB929E797E3007ACB89 /* FileBrowserPlugin.h */,
+				6C168EBA29E797E3007ACB89 /* FileBrowserPlugin.m */,
+				6C168EBC29E79B79007ACB89 /* ImageBrowserPlugin.h */,
+				6C168EBD29E79B79007ACB89 /* ImageBrowserPlugin.m */,
+				6C168EC429E7A89D007ACB89 /* PhonePlugin.h */,
+				6C168EC529E7A89D007ACB89 /* PhonePlugin.m */,
 			);
 			path = plugins;
 			sourceTree = "<group>";
@@ -170,6 +348,8 @@
 				6CB7E35829CAF360009998B1 /* Plugin.m */,
 				6CB7E35B29CAF4EB009998B1 /* PluginModel.h */,
 				6CB7E35C29CAF4FA009998B1 /* PluginModel.m */,
+				6C379C9A29E6420A00956445 /* PluginDelegate.h */,
+				6C379C9B29E6420A00956445 /* PluginDelegate.m */,
 			);
 			path = configs;
 			sourceTree = "<group>";
@@ -303,13 +483,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C379CA029E6447100956445 /* Util.m in Sources */,
+				6C168EB829E793DD007ACB89 /* GPSPlugin.m in Sources */,
 				6CB7E36229CB0663009998B1 /* BiometricPlugin.m in Sources */,
+				6C168EB529E78DF1007ACB89 /* ExternalBrowserPlugin.m in Sources */,
 				6CB7E35929CAF360009998B1 /* Plugin.m in Sources */,
+				6C168EBE29E79B79007ACB89 /* ImageBrowserPlugin.m in Sources */,
+				6C168EC629E7A89D007ACB89 /* PhonePlugin.m in Sources */,
+				6C168EC329E7A882007ACB89 /* PhoneScreen.m in Sources */,
+				6C379CB529E66D7700956445 /* ShareScreen.m in Sources */,
+				6C379CA429E65D7D00956445 /* DialogScreen.m in Sources */,
+				6C168ECA29E7AEF8007ACB89 /* ContactScreen.m in Sources */,
+				6C215C3B29D29E8300FBEB35 /* ApplicationScreen.m in Sources */,
+				6C168ECE29E7BC4F007ACB89 /* QRScannerScreen.m in Sources */,
 				6CB7E36029CB0218009998B1 /* CameraPlugin.m in Sources */,
 				6CB7E32329CADEC1009998B1 /* ViewController.m in Sources */,
 				6CB7E35729CAEE57009998B1 /* DialogPlugin.m in Sources */,
+				6C379CB129E66D0300956445 /* SharePlugin.m in Sources */,
+				6C215C3E29D2CDA000FBEB35 /* ApplicationPlugin.m in Sources */,
+				6C379CA829E669F200956445 /* SampleScreen.m in Sources */,
+				6C379CAB29E66A6700956445 /* SamplePlugin.m in Sources */,
 				6CB7E31D29CADEC1009998B1 /* AppDelegate.m in Sources */,
+				6C379CB829E685AB00956445 /* DownloadPlugin.m in Sources */,
+				6C168EBB29E797E3007ACB89 /* FileBrowserPlugin.m in Sources */,
+				6C379CBB29E6AF6C00956445 /* ContactPlugin.m in Sources */,
+				6C379CAE29E66BF800956445 /* ToastPlugin.m in Sources */,
 				6CB7E32E29CADEC3009998B1 /* main.m in Sources */,
+				6C379C9C29E6420A00956445 /* PluginDelegate.m in Sources */,
 				6CB7E35D29CAF4FB009998B1 /* PluginModel.m in Sources */,
 				6CB7E32029CADEC1009998B1 /* SceneDelegate.m in Sources */,
 			);
@@ -474,6 +674,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4K446R55W6;
@@ -481,7 +682,9 @@
 				INFOPLIST_FILE = sample/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Objective-C";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Need camera access to take pictures";
+				INFOPLIST_KEY_NSContactsUsageDescription = "Need contacts.";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Need Authentication with TouchId or FaceID";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need location.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Need library access to upload images";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -504,6 +707,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4K446R55W6;
@@ -511,7 +715,9 @@
 				INFOPLIST_FILE = sample/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Objective-C";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Need camera access to take pictures";
+				INFOPLIST_KEY_NSContactsUsageDescription = "Need contacts.";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Need Authentication with TouchId or FaceID";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need location.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Need library access to upload images";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

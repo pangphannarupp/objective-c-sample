@@ -2,16 +2,21 @@
 //  BiometricPlugin.m
 //  sample
 //
-//  Created by 임재욱 on 22/3/23.
+//  Created by Pang Phanna on 22/3/23.
 //
 
 #import <Foundation/Foundation.h>
 #import "BiometricPlugin.h"
+#import "Util.h"
 
 @implementation BiometricPlugin
 
-- (void) execute {
-    NSLog(@"execute BiometricPlugin");
+//Util *util;
+
+- (void)execute:(NSDictionary *)param {
+    NSLog(@"BiometricPlugin => param => %@", param);
+    
+    Util *util = [[Util alloc] init];
     // Create a local authentication context
     LAContext *context = [[LAContext alloc] init];
     NSError *error = nil;
@@ -27,12 +32,20 @@
                 dispatch_async(dispatch_get_main_queue(), ^{
                     // Perform some action after successful authentication
                     NSLog(@"successful authentication");
+                    [util showDialog: self.viewController message:@{
+                        @"result": @YES,
+                    }];
                 });
             } else {
                 // Biometric authentication failed
                 dispatch_async(dispatch_get_main_queue(), ^{
                     // Display an error message to the user
                     NSLog(@"error message to the user");
+                    [util showDialog: self.viewController message:@{
+                        @"result": @NO,
+                        @"errorCode": @"-1",
+                        @"errorMessage": @"authentication failed"
+                    }];
                 });
             }
         }];
@@ -40,7 +53,12 @@
         // Biometric authentication is not available
         dispatch_async(dispatch_get_main_queue(), ^{
             // Display an error message to the user
-            NSLog(@"error message to the user");
+            NSLog(@"authentication is not available");
+            [util showDialog: self.viewController message:@{
+                @"result": @NO,
+                @"errorCode": @"-2",
+                @"errorMessage": @"authentication is not available"
+            }];
         });
     }
 }

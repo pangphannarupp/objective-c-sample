@@ -7,10 +7,8 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface Util : NSObject
 
-@end
+-(void)showDialog:(UIViewController *)viewController message:(NSDictionary *)message;
 
-NS_ASSUME_NONNULL_END
+@end

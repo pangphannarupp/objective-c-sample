@@ -6,11 +6,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "Plugin.h"
 
-NS_ASSUME_NONNULL_BEGIN
-
-@interface FileBrowserPlugin : NSObject
+@interface FileBrowserPlugin : Plugin <UIDocumentPickerDelegate>
 
 @end
-
-NS_ASSUME_NONNULL_END

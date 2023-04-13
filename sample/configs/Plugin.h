@@ -2,11 +2,20 @@
 //  Plugin.h
 //  sample
 //
-//  Created by 임재욱 on 22/3/23.
+//  Created by Pang Phanna on 22/3/23.
 //
 
-#ifndef Plugin_h
-#define Plugin_h
+#import <UIKit/UIKit.h>
+#import "PluginDelegate.h"
+#import "Util.h"
 
+@interface Plugin : NSObject
 
-#endif /* Plugin_h */
+@property (nonatomic, strong) Util *util;
+@property (nonatomic, strong) UIViewController *viewController;
+@property(nonatomic, weak)id <PluginDelegate> delegate;
+
+//- (instancetype)setViewController:(NSString *)pluginName pluginClass:(Plugin *)pluginClass;
+- (void) execute:(NSDictionary *)param;
+
+@end

@@ -6,11 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Plugin.h"
 
-NS_ASSUME_NONNULL_BEGIN
-
-@interface ExternalBrowserPlugin : NSObject
+@interface ExternalBrowserPlugin : Plugin
 
 @end
-
-NS_ASSUME_NONNULL_END

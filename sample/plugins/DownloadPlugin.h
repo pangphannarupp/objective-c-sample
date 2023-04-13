@@ -6,11 +6,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Plugin.h"
 
-NS_ASSUME_NONNULL_BEGIN
+@interface DownloadPlugin : Plugin <NSURLSessionDelegate>
 
-@interface DownloadPlugin : NSObject
+@property (nonatomic, strong) UIProgressView *progressbarView;
 
 @end
-
-NS_ASSUME_NONNULL_END

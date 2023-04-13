@@ -6,11 +6,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Contacts/Contacts.h>
+#import <ContactsUI/ContactsUI.h>
+#import "Plugin.h"
 
-NS_ASSUME_NONNULL_BEGIN
 
-@interface ContactPlugin : NSObject
+@interface ContactPlugin : Plugin <CNContactPickerDelegate>
 
 @end
-
-NS_ASSUME_NONNULL_END

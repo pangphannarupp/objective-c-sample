@@ -6,11 +6,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PhonePlugin.h"
 
-NS_ASSUME_NONNULL_BEGIN
+@interface PhoneScreen : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
-@interface PhoneScreen : NSObject
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSArray *itemList;
+@property (nonatomic, strong) PhonePlugin *plugin;
 
 @end
-
-NS_ASSUME_NONNULL_END

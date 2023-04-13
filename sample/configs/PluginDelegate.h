@@ -7,10 +7,10 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
 
-@interface PluginDelegate : NSObject
+@protocol PluginDelegate <NSObject>
+
+- (void)onSuccess:(id)result;
+- (void)onFail:(id)result;
 
 @end
-
-NS_ASSUME_NONNULL_END

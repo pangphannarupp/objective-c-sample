@@ -6,11 +6,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ContactPlugin.h"
 
-NS_ASSUME_NONNULL_BEGIN
+@interface ContactScreen : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
-@interface ContactScreen : NSObject
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSArray *itemList;
+@property (nonatomic, strong) ContactPlugin *plugin;
 
 @end
-
-NS_ASSUME_NONNULL_END

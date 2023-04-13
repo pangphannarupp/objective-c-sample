@@ -7,6 +7,14 @@
 
 #import "PluginDelegate.h"
 
-@implementation PluginDelegate
+@implementation PluginDelegate : NSObject
+
+-(void)onSuccess:(id)result{
+    NSLog(@"%@", result);
+}
+
+-(void)onFail:(id)result{
+    NSLog(@"%@", result);
+}
 
 @end

@@ -9,4 +9,16 @@
 
 @implementation SamplePlugin
 
+- (void)execute:(NSDictionary *)param {
+    NSLog(@"SamplePlugin => param => %@", param);
+    
+    NSString *type = [param objectForKey:@"type"];
+    
+    if([type isEqual:@"item"]) {
+        
+    } else {
+        
+    }
+}
+
 @end

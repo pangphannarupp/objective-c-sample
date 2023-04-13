@@ -2,14 +2,10 @@
 //  ViewController.m
 //  sample
 //
-//  Created by 임재욱 on 22/3/23.
+//  Created by Pang Phanna on 22/3/23.
 //
 
 #import "ViewController.h"
-#import "configs/PluginModel.h"
-#import "BiometricPlugin.h"
-#import "CameraPlugin.h"
-#import "DialogPlugin.h"
 
 @interface ViewController ()
 
@@ -19,6 +15,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.viewController = self;
+    
+    self.title = @"Objective-C";
     
     // Create the table view
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
@@ -28,33 +27,150 @@
     [self.view addSubview:self.tableView];
     
     self.pluginList = @[
-        [[PluginModel alloc] initWithName: @"Applicatoin" pluginClass: [[DialogPlugin alloc] init]],
-        [[PluginModel alloc] initWithName: @"Biometric" pluginClass: [[BiometricPlugin alloc] init]],
-        [[PluginModel alloc] initWithName: @"Bluetooth" pluginClass: [[DialogPlugin alloc] init]],
-        [[PluginModel alloc] initWithName: @"Camera" pluginClass: [[CameraPlugin alloc] init]],
-        [[PluginModel alloc] initWithName: @"Contact" pluginClass: [[DialogPlugin alloc] init]],
-        [[PluginModel alloc] initWithName: @"Dialog" pluginClass: [[DialogPlugin alloc] init]],
-        [[PluginModel alloc] initWithName: @"Download" pluginClass: [[DialogPlugin alloc] init]],
-        [[PluginModel alloc] initWithName: @"Encrypt & Decrypt" pluginClass: [[DialogPlugin alloc] init]],
-        [[PluginModel alloc] initWithName: @"External Browser" pluginClass: [[DialogPlugin alloc] init]],
-        [[PluginModel alloc] initWithName: @"External Map Viewer" pluginClass: [[DialogPlugin alloc] init]],
-        [[PluginModel alloc] initWithName: @"File Browser" pluginClass: [[DialogPlugin alloc] init]],
-        [[PluginModel alloc] initWithName: @"GPS" pluginClass: [[DialogPlugin alloc] init]],
-        [[PluginModel alloc] initWithName: @"Image Viewer" pluginClass: [[DialogPlugin alloc] init]],
-        [[PluginModel alloc] initWithName: @"Internal Browser" pluginClass: [[DialogPlugin alloc] init]],
-        [[PluginModel alloc] initWithName: @"MP3 Player" pluginClass: [[DialogPlugin alloc] init]],
-        [[PluginModel alloc] initWithName: @"Network Information" pluginClass: [[DialogPlugin alloc] init]],
-        [[PluginModel alloc] initWithName: @"Orientation" pluginClass: [[DialogPlugin alloc] init]],
-        [[PluginModel alloc] initWithName: @"Phone" pluginClass: [[DialogPlugin alloc] init]],
-        [[PluginModel alloc] initWithName: @"QR" pluginClass: [[DialogPlugin alloc] init]],
-        [[PluginModel alloc] initWithName: @"Sample" pluginClass: [[DialogPlugin alloc] init]],
-        [[PluginModel alloc] initWithName: @"Screenshot" pluginClass: [[DialogPlugin alloc] init]],
-        [[PluginModel alloc] initWithName: @"Share" pluginClass: [[DialogPlugin alloc] init]],
-        [[PluginModel alloc] initWithName: @"Shortcut" pluginClass: [[DialogPlugin alloc] init]],
-        [[PluginModel alloc] initWithName: @"Speech Recognizer" pluginClass: [[DialogPlugin alloc] init]],
-        [[PluginModel alloc] initWithName: @"Storage" pluginClass: [[DialogPlugin alloc] init]],
-        [[PluginModel alloc] initWithName: @"Toast Message" pluginClass: [[DialogPlugin alloc] init]],
-        [[PluginModel alloc] initWithName: @"Web Content" pluginClass: [[DialogPlugin alloc] init]],
+        [[PluginModel alloc]
+         initWithName: @"Application"
+         pluginClass: nil
+         screen: [[ApplicationScreen alloc] init]
+         param: nil],
+        [[PluginModel alloc]
+         initWithName: @"Biometric"
+         pluginClass: [[BiometricPlugin alloc] init]
+         screen: nil
+         param: nil],
+        [[PluginModel alloc]
+         initWithName: @"Bluetooth"
+         pluginClass: nil
+         screen: [[UIViewController alloc] init]
+         param: nil],
+        [[PluginModel alloc]
+         initWithName: @"Camera"
+         pluginClass: [[CameraPlugin alloc] init]
+         screen: nil
+         param: nil],
+        [[PluginModel alloc]
+         initWithName: @"Contact"
+         pluginClass: nil
+         screen: [[ContactScreen alloc] init]
+         param: nil],
+        [[PluginModel alloc]
+         initWithName: @"Dialog"
+         pluginClass: nil
+         screen: [[DialogScreen alloc] init]
+         param: nil],
+        [[PluginModel alloc]
+         initWithName: @"Download"
+         pluginClass: [[DownloadPlugin alloc] init]
+         screen: nil
+         param: nil],
+        [[PluginModel alloc]
+         initWithName: @"Encrypt & Decrypt"
+         pluginClass: nil
+         screen: [[UIViewController alloc] init]
+         param: nil],
+        [[PluginModel alloc]
+         initWithName: @"External Browser"
+         pluginClass: [[ExternalBrowserPlugin alloc] init]
+         screen: nil
+         param: @{
+            @"url": @"https://youtube.com"
+        }],
+        [[PluginModel alloc]
+         initWithName: @"External Map Viewer"
+         pluginClass: [[DialogPlugin alloc] init]
+         screen: nil
+         param: nil],
+        [[PluginModel alloc]
+         initWithName: @"File Browser"
+         pluginClass: [[FileBrowserPlugin alloc] init]
+         screen: nil
+         param: nil],
+        [[PluginModel alloc]
+         initWithName: @"GPS"
+         pluginClass: [[GPSPlugin alloc] init]
+         screen: nil
+         param: nil],
+        [[PluginModel alloc]
+         initWithName: @"Image Browser"
+         pluginClass: [[ImageBrowserPlugin alloc] init]
+         screen: nil
+         param: nil],
+        [[PluginModel alloc]
+         initWithName: @"Image Viewer"
+         pluginClass: nil
+         screen: [[UIViewController alloc] init]
+         param: nil],
+        [[PluginModel alloc]
+         initWithName: @"Internal Browser"
+         pluginClass: nil
+         screen: [[UIViewController alloc] init]
+         param: nil],
+        [[PluginModel alloc]
+         initWithName: @"MP3 Player"
+         pluginClass: nil
+         screen: [[UIViewController alloc] init]
+         param: nil],
+        [[PluginModel alloc]
+         initWithName: @"Network Information"
+         pluginClass: [[DialogPlugin alloc] init]
+         screen: nil
+         param: nil],
+        [[PluginModel alloc]
+         initWithName: @"Orientation"
+         pluginClass: nil
+         screen: [[UIViewController alloc] init]
+         param: nil],
+        [[PluginModel alloc]
+         initWithName: @"Phone"
+         pluginClass: nil
+         screen: [[PhoneScreen alloc] init]
+         param: nil],
+        [[PluginModel alloc]
+         initWithName: @"QR"
+         pluginClass: nil
+         screen: [[QRScannerScreen alloc] init]
+         param: nil],
+        [[PluginModel alloc]
+         initWithName: @"Sample"
+         pluginClass: nil
+         screen: [[SampleScreen alloc] init]
+         param: nil],
+        [[PluginModel alloc]
+         initWithName: @"Screenshot"
+         pluginClass: [[DialogPlugin alloc] init]
+         screen: nil
+         param: nil],
+        [[PluginModel alloc]
+         initWithName: @"Share"
+         pluginClass: nil
+         screen: [[ShareScreen alloc] init]
+         param: nil],
+        [[PluginModel alloc]
+         initWithName: @"Shortcut"
+         pluginClass: nil
+         screen: [[UIViewController alloc] init]
+         param: nil],
+        [[PluginModel alloc]
+         initWithName: @"Speech Recognizer"
+         pluginClass: nil
+         screen: [[UIViewController alloc] init]
+         param: nil],
+        [[PluginModel alloc]
+         initWithName: @"Storage"
+         pluginClass: nil
+         screen: [[UIViewController alloc] init]
+         param: nil],
+        [[PluginModel alloc]
+         initWithName: @"Toast Message"
+         pluginClass: [[ToastPlugin alloc] init]
+         screen: nil
+         param: @{
+            @"message": @"សួស្ដី Objective-C!"
+        }],
+//        [[PluginModel alloc]
+//         initWithName: @"Web Content"
+//         pluginClass: nil
+//         screen: [[UIViewController alloc] init]
+//         param: nil],
     ];
     
 }
@@ -81,9 +197,38 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     PluginModel *model = self.pluginList[indexPath.row];
-    Plugin *plugin = [model pluginClass];
-    plugin.viewController = self;
-    [plugin execute];
+    if(model.screen) {
+        // Create the root view controller
+        UIViewController *rootViewController = [model screen];
+        // Create the navigation controller and set its root view controller
+        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
+        
+        // Customize the appearance of the navigation bar
+        NSDictionary *titleAttributes = @{ NSForegroundColorAttributeName: [UIColor blackColor],
+                                            NSFontAttributeName: [UIFont systemFontOfSize:18.0] };
+        navigationController.navigationBar.titleTextAttributes = titleAttributes;
+        // Create a custom back button with an image
+        UIImage *backButtonImage = [UIImage imageNamed:@"icon_back"];
+        UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [backButton setImage:backButtonImage forState:UIControlStateNormal];
+        [backButton addTarget:self action:@selector(backButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+        backButton.frame = CGRectMake(0, 0, 40, 40);
+        // Create a bar button item with the custom button
+        UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
+        // Set the left bar button item of the navigation item
+        navigationController.navigationItem.leftBarButtonItem = backButtonItem;
+        
+        self.modalPresentationStyle = UIModalPresentationFullScreen;
+        [self.viewController presentViewController: navigationController animated: YES completion: nil];
+    } else {
+        Plugin *plugin = [model pluginClass];
+        plugin.viewController = self;
+        [plugin execute: [model param]];
+    }
+}
+
+- (void)backButtonTapped:(UIButton *)sender {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end
